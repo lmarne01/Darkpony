@@ -1,0 +1,423 @@
+@import "general.css";
+/*General*/
+.pl-15{
+    padding-left:9em;
+}
+
+.pr-15{
+    padding-right:9em;
+}
+
+.h-20-sm-5{
+    height:20%;
+}
+
+.title-1{
+   font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 20px/var(--unnamed-line-spacing-24) var(--unnamed-font-family-roboto);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    font: normal normal normal 20px/24px Roboto;
+    letter-spacing: 0px;
+    color: #32A886;
+    opacity: 1; 
+}
+/*********/
+/*
+body{
+    max-width:1366px;
+
+    margin: auto;
+}
+*/
+/*Navbar styling*/
+.logo{
+    margin-top: 20px;
+    margin-bottom: 19px;
+    margin-left: 90px;
+    width: 116px;
+    height: 53px;
+    text-align: left;
+    font: normal normal bold 45px/53px Roboto;
+    letter-spacing: 0px;
+    color: #1A1818;
+    opacity: 1;
+    font-size:40px ! important;
+}
+
+.nav-item{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-21) var(--unnamed-font-family-roboto);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    font: normal normal normal 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #1A1818;
+    opacity: 1;
+}
+
+@media screen and (max-width:993px) {
+    .navbar-item-position{
+        margin-left: 90px;
+    }
+}
+
+.contact-button{
+    text-align: left;
+    font: normal normal medium 14px/21px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+}
+.circle-icon {
+    background: #ffffff;
+    padding:5px;
+    border-radius: 50%;
+}
+a.nav-link:hover{
+    color:#32A886! important;
+}
+
+li.active a.nav-link{
+    color:#32A886! important;
+}
+/*********************************************************/
+/*Intro Image*/
+div.intro-img{
+    margin:0 !important;
+    padding:0 !important;  
+    background: url("../images/4530.png") no-repeat center center fixed;
+    background-size: cover;
+    height:600px;
+    cursor:pointer;
+}
+div.intro-img .row .on-intro-img{
+    background: #32A886 0% 0% no-repeat padding-box;
+    border-radius: 0px 200px 200px 0px;
+    opacity: 0.9;
+}
+div.intro-img .row .on-intro-img p{
+    color:white;
+}
+
+div.intro-img .row .on-intro-img .title-container{
+    color:white;
+    margin-left: 90px;
+    margin-right: 69px;
+    margin-top:56px;
+}
+
+div.intro-img .row .on-intro-img p.first-p{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 20px/var(--unnamed-line-spacing-24) var(--unnamed-font-family-roboto);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ffffff);
+    text-align: left;
+    font: normal normal normal 20px/24px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+div.intro-img .row .on-intro-img p.second-p{
+        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-46)/var(--unnamed-line-spacing-54) var(--unnamed-font-family-roboto);
+        letter-spacing: var(--unnamed-character-spacing-0);
+        color: var(--unnamed-color-ffffff);
+        text-align: left;
+        font: normal normal bold 46px/54px Roboto;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+}
+
+@media (max-width:700px) {
+    div.intro-img .row .on-intro-img p.second-p{
+        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-46)/var(--unnamed-line-spacing-54) var(--unnamed-font-family-roboto);
+        letter-spacing: var(--unnamed-character-spacing-0);
+        color: var(--unnamed-color-ffffff);
+        text-align: left;
+        font: normal normal bold 30px/34px Roboto;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+    }
+}
+
+div.intro-img .row .on-intro-img p.third-p{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 20px/var(--unnamed-line-spacing-25) var(--unnamed-font-family-roboto);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    font: normal normal bold 20px/25px Roboto;
+    margin-top:34px;
+    letter-spacing: 0px;
+    color: #F8F8F8;
+    text-transform: uppercase;
+}
+/*block#2*/
+.title-2{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-46)/var(--unnamed-line-spacing-54) var(--unnamed-font-family-roboto);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: center;
+    font: normal normal bold 46px/54px Roboto;
+    letter-spacing: 0px;
+    color: #1A1818;
+    opacity: 1;
+}
+
+.who-title{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 20px/var(--unnamed-line-spacing-24) var(--unnamed-font-family-roboto);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    font: normal normal normal 20px/24px Roboto;
+    letter-spacing: 0px;
+    color: #32A886;
+    opacity: 1;
+}
+
+@media (max-width:1000px){
+    .pl-15{
+        padding-left:1em ! important;
+    }
+    .pr-15{
+        padding-right:1em ! important;
+    }
+}
+/******************************************/
+/*block#3*/
+
+.block-3-1{
+    
+    background: #32A886 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.block-3-2{
+    background: #1A1818 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.block-3-1 p,.block-3-2 p{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-18)/26px var(--unnamed-font-family-roboto);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ffffff);
+    text-align: center;
+    font: normal normal normal 18px/26px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1; 
+}
+
+.block-3-1 h3,.block-3-2 h3{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 25px/32px var(--unnamed-font-family-roboto);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ffffff);
+    text-align: center;
+    font: normal normal bold 25px/32px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1; 
+}
+/*****************************/
+/*Block#4*/
+.learning-title{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-46)/var(--unnamed-line-spacing-54) var(--unnamed-font-family-roboto);
+    letter-spacing: var(--unnamed-character-spacing-1-38);
+    text-align: center;
+    font: normal normal bold 46px/54px Roboto;
+    letter-spacing: 1.38px;
+    color: #1A1818;
+    opacity: 1;
+}
+
+.desc-text
+{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-18)/26px var(--unnamed-font-family-roboto);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: center;
+    font: normal normal normal 18px/26px Roboto;
+    letter-spacing: 0px;
+    color: #7E858F;
+    opacity: 1;
+}
+
+.desc-title{
+    font: var(--unnamed-font-style-normal) normal medium 25px/32px var(--unnamed-font-family-roboto);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: center;
+    font: normal normal medium 25px/32px Roboto;
+    letter-spacing: 0px;
+    color: #1A1818;
+    opacity: 1;
+}
+
+.block4-containers{
+    text-align: center;
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 32px 32px;
+    opacity: 1;
+    margin-right: 26px;
+    margin-bottom: 26px;
+    max-width:370px ! important;
+    padding:0 ;
+}
+
+.align-items-center{
+    text-align:center;
+    align-items:center;
+}
+
+
+/*Block#5 Services*/
+.uneven-pics{
+    object-fit:cover;
+    width:100%;
+}
+
+.portfolio{
+    height: 484px;
+}
+.black-background{
+    background: #1A1818 0% 0% no-repeat padding-box;
+    opacity: 1; 
+}
+
+.pic1{
+    width: 500px;
+    height: 500px;
+    background: transparent url('img/malcolm-shadrach-ZIFm4lrghqM-unsplash.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.pic2{
+    width: 500px;
+    height: 700px;
+    background: transparent url('img/kara-eads-GevLspKMK7A-unsplash.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+/*gallery*/
+
+/*client carousel*/
+
+.clients-container{
+    height: 502px;
+    align-self: center;
+}
+.gray-background{
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+ol.carousel-indicators li{
+    background-color:black;
+}
+
+@media screen and (max-width:600px){
+    .learning-title{
+        width:100%! important;
+        font-size:15px;
+    }
+}
+
+
+.carousel-indicators li {
+  width: 15px ! important;
+  height: 15px ! important;
+  margin: 0px 6px ! important;
+  border-radius: 100% ! important;
+}
+
+.carousel-indicators li.active {
+  background-color:#32A886 ! important;
+}
+
+#clients-carousel{
+    height:180px;
+}
+
+/*send message*/
+
+.block-clip-top{
+    bottom:0;
+    margin: 0 auto;
+    width: 119px;
+    height: 5px;
+    transform:matrix(0, -1, 1, 0, 0, 0);
+    background: #B1B1B1;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.block-clip-bottom{
+    /*position:absolute;*/
+    margin: 0 auto;
+    width: 5px;
+    height: 60px;
+    background: #B1B1B1 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+
+
+@media (min-width:831px){
+    .send-message-container{
+        width: 595px;
+        height: 697px;
+        background: #000000 0% 0% no-repeat padding-box;
+        border-radius: 70px 0px 0px 70px;
+        opacity: 0.78;
+    }
+    
+    .contact-details-container{
+        width: 422px;
+        height: 697px;
+        background: #000000 0% 0% no-repeat padding-box;
+        border-radius: 0px 70px 70px 0px;
+        opacity: 1;
+    }
+    
+    .message-container{
+        margin:0 !important;
+        padding:0 !important;  
+        background: url("../images/byron-johnson-pj1jt4vBGZY-unsplash.png") no-repeat center center fixed;
+        background-size: cover;
+        height:979px;
+
+    }
+}
+
+@media (max-width:830px){
+    .send-message-container{
+        width: 595px;
+        height: 697px;
+        background: #000000 0% 0% no-repeat padding-box;
+        opacity: 0.78;
+    }
+    
+    .contact-details-container{
+        width: 422px;
+        height: 697px;
+        background: #000000 0% 0% no-repeat padding-box;
+        opacity: 1;
+    }
+    
+    .message-container{
+        margin:0 !important;
+        padding:0 !important;  
+        background: url("../images/byron-johnson-pj1jt4vBGZY-unsplash.png") no-repeat center center fixed;
+        background-size: cover;
+        height:1679px;
+
+    }
+}
+
+.send-message-title{
+        width: 232px;
+        height: 24px;
+        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 20px/var(--unnamed-line-spacing-24) var(--unnamed-font-family-roboto);
+        letter-spacing: var(--unnamed-character-spacing-0);
+        color: var(--unnamed-color-ffffff);
+        text-align: left;
+        font: normal normal normal 20px/24px Roboto;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+    }
