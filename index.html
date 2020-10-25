@@ -335,11 +335,46 @@
                 <div class="container">
                     <div class="row">
                         <div class="send-message-container col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 pl-5 pt-4">
-                            <h2 class="send-message-title w-100 mt-5 ml-5 mr-4">SEND US YOUR MESSAGE</h2>
+                            <form class=" mt-5 ml-5 mr-4">
+                                <h2 class="send-message-title w-100">SEND US YOUR MESSAGE</h2>
+                                <input type="text" class="txt-input w-100 mt-4 py-3" id="FullName" placeholder="Your Full Name">
+                                <input type="text" class="txt-input w-100 mt-4 py-3" id="Email" placeholder="Your Email">
+                                <input type="text" class="txt-input w-100 mt-4 py-3" id="Subject" placeholder="Subject">
+                                <div class="form-group mt-4 py-3">
+                                    <textarea class="w-100 txt-input form-control p-0" id="" rows="3" placeholder="Your Message"></textarea>
+                                </div>
+                                <div class="form-group mt-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input message-checkbox" type="checkbox" value="agreement" id="agreementcheck" required>
+                                        <label class="form-check-label" for="agreementcheck">
+                                            I agree that Company Ltd will collect and process my personal information.
+                                        </label>
+                                    </div>
+                                </div>
+                                <p class="form-paragraph">
+                                    This form gathers your personal information and contact information so that we can provide the services you requested
+                                from us. Read our Privacy Policy to understand how we protect and manage the data you submit.
+                                </p>
+                            <button type="submit" class="btn-success w-100 form-button">Submit Your Message<i class="fas fa-arrow-right text-dark bg-light circle-icon ml-2 mr-1"></i></button>
+                            </form>
                         </div>
                         <div class="contact-details-container col">
-                
+                            <div class="mt-5 ml-5 mr-4">
+                                <h2 class="send-message-title w-100">CONTACT DETAILS</h2>
+                                <p class="contact-details-title pt-5">Where to Find Us</p>
+                                <p class="contact-details-paragraph pt-4 pb-5">Ayios Dometios <br>B.O. Box 0000 <br>Nicosia, Cyprus</p>
+                                <p class="contact-details-title pt-5">Email Us</p>
+                                <p class="contact-details-paragraph pt-4 pb-5">info@companyltd.cy</p>
+                                <p class="contact-details-title pt-2">Call Us At</p>
+                                <p class="contact-details-paragraph pt-4 pb-5">Phone: (+357) 22 222 222<br>Fax: (+357) 22 333 333</p>
+                            </div>
+                            <div class="social-icons-container ml-5 mt-5">
+                                <button onclick class="social-icon-button mr-3"><i class="fab fa-facebook-f social-icon"></i></button>
+                                <button onclick class="social-icon-button mr-3"><i class="fab fa-instagram social-icon"></i></button>
+                                <button onclick class="social-icon-button mr-3"><i class="fab fa-linkedin-in social-icon"></i></button>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
