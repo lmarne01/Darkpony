@@ -3,6 +3,9 @@
 <html lang="en">
 
 <head>
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css">
     <link rel="stylesheet" href="css/index.css">
@@ -14,8 +17,10 @@
 </head>
 
 <body>
+    <!--top button function-->
+    <button onclick="topFunction()" id="scrlBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
     <div class="web-container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
             <div class="d-flex flex-grow-1">
                 <a class=" logo" href="#">LOGO</a>
                 <div class="w-100 text-right"></div>
@@ -27,22 +32,22 @@
                 <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarNav">
                     <ul class="navbar-nav ml-auto flex-nowrap">
                         <li class="nav-item navbar-item-position active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item navbar-item-position">
-                            <a class="nav-link" href="#">Who We Are</a>
+                            <a class="nav-link" href="#WhoWeAre">Who We Are</a>
                         </li>
                         <li class="nav-item navbar-item-position">
-                            <a class="nav-link" href="#">Our Services</a>
+                            <a class="nav-link" href="#Services">Our Services</a>
                         </li>
                         <li class="nav-item navbar-item-position">
-                            <a class="nav-link " href="#">Our Portfolio</a>
+                            <a class="nav-link " href="#Portfolio">Our Portfolio</a>
                         </li>
                         <li class="nav-item navbar-item-position">
-                            <a class="nav-link " href="#">Clients</a>
+                            <a class="nav-link " href="#Clients">Clients</a>
                         </li>
                         <li class="nav-item navbar-item-position">
-                            <a class="nav-link " href="#"><span class="badge badge-pill badge-dark contact-button">Contact Us<i class="fas fa-arrow-right text-dark bg-light circle-icon ml-2 mr-1"></i></span></a>
+                            <a class="nav-link " href="#Contact"><span class="badge badge-pill badge-dark contact-button">Contact Us<i class="fas fa-arrow-right text-dark bg-light circle-icon ml-2 mr-1"></i></span></a>
                         </li>
                     </ul>
                 </div>
@@ -50,25 +55,39 @@
         </nav>
         <div class="page-container container-fluid ">
         <!--it should be carousel-->
-            <div class="row p-0">
+            <div class="row p-0" id="Home">
                 <div class="intro-img container-fluid">
                     <div class="row align-items-center h-100">
-                        <div class="col-auto on-intro-img h-50">
+                        <div class="col-auto on-intro-img">
                             <div class="title-container">
                                 <p class="first-p">WE ARE COMPANY LTD</p>
                                 <p class="second-p">Your Imagination</p>
                                 <p class="second-p">our creativity</p>
-                                <p class="third-p">CONTACT US<i class="fas fa-arrow-right text-dark bg-light circle-icon ml-2 mr-1"></i> </p>
+                                <p class="third-p mt-4 mb-4" href="#Contact"><a href="#Contact">CONTACT US<i class="fas fa-arrow-right text-dark bg-light circle-icon ml-2 mr-1"></i></a></p>
                             </div>
                         </div>
                         <div class="col">
 
                         </div>
+                        <div class="col-1">
+                            <span onclick="window.open('https://www.facebook.com');" class="intro-social-icon-button-fb mb-2">
+                                <i class="fab fa-facebook-f intro-social-icon-fb"></i>
+                            </span>
+                            <span onclick="window.open('https://www.instagram.com');" class="intro-social-icon-button mb-2">
+                                <i class="fab fa-instagram intro-social-icon"></i>
+                            </span>
+                            <span onclick="window.open('https://www.linkedin.com');" class="intro-social-icon-button mb-2">
+                                <i class="fab fa-linkedin-in intro-social-icon"></i>
+                            </span>
+                            <span class="intro-social-icon-button mb-2">
+                                <i class="fab intro-social-icon gr">GR</i>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
             <!--Block#2 Who we Are-->
-            <div class="row">
+            <div class="row who" id="WhoWeAre">
                 <div class="title-1 text-success text-center w-100 mt-5">WHO WE ARE</div>
                 <div class="title-2 text-center w-100 mt-2"><h2 class="who-title-2">Our Story and Activity</h2></div>
                 <div class="text-center w-100 mt-2 mb-2 container ">
@@ -83,8 +102,8 @@
                 </div>
             </div>
             <!--Block#3 Titles-->
-            <div class="row">
-                <div class="col block-3-1">
+            <div class="row titles">
+                <div class="col titles-3-1">
                     <h3 class="text-center mt-5">Title 1 Goes Here</h3>
                     <div class="text-center mt-3 pl-15 pr-15 paragraph">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -92,7 +111,7 @@
                         magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
                     </div>
                 </div>
-                <div class="col block-3-2">
+                <div class="col titles-3-2">
                     <h3 class="text-center mt-5">Title 2 Goes Here</h3>
                     <div class="text-center mt-3 pl-15 pr-15 paragraph">
                         <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -104,7 +123,7 @@
                 </div>
             </div>
             <!--Block#4 Services-->
-            <div class="row">
+            <div class="row services" id="Services">
                 <div class="title-1 text-success text-center w-100 mt-5">LEARN MORE ABOUT</div>
                 <div class="title-2 text-center w-100 mt-2">
                     <h2 class="learning-title text-center">Our Services</h2>
@@ -170,8 +189,8 @@
                     </div>
                 </div>
             </div>
-            <!--Block#5 Services-->
-            <div class="row">
+            <!--Block#5 portfolio-->
+            <div class="row" id="Portfolio">
                 <div class="col-12 black-background portfolio mb-n5">
                     <div class="title-1 text-success text-center w-100 mt-5">OUR AMAZING PORTFOLIO</div>
                     <div class="title-2 text-center w-100 mt-2 d-flex justify-content-center">
@@ -199,8 +218,8 @@
                 </div>
             </div>
         </div>
-        <!--Block#6 Services-->
-        <div class="gray-background clients-container">
+        <!--Block#6 clients-->
+        <div class="gray-background clients-container" id="Clients">
             <div class="title-1 text-success text-center w-100 pt-5 mt-5">MEET OUR CLIENTS</div>
             <div class="title-2 text-center w-100 mt-2 d-flex justify-content-center">
                 <h2 class="learning-title w-50 text-center">Some of our Best Cooperations</h2>
@@ -326,6 +345,7 @@
                 </div>
             </div>
             <p class="block-clip-top mt-5"></p>
+            <!--send message form-->
             <div class="message-container">
                 <div class="w-100 pt-5"></div>
                 <div class="title-1 text-success text-center w-100 pt-5">CONTACT US</div>
@@ -335,13 +355,26 @@
                 <div class="container">
                     <div class="row">
                         <div class="send-message-container col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 pl-5 pt-4">
-                            <form class=" mt-5 ml-5 mr-4">
+                            <form class=" mt-5 ml-5 mr-4" action="">
                                 <h2 class="send-message-title w-100">SEND US YOUR MESSAGE</h2>
-                                <input type="text" class="txt-input w-100 mt-4 py-3" id="FullName" placeholder="Your Full Name">
-                                <input type="text" class="txt-input w-100 mt-4 py-3" id="Email" placeholder="Your Email">
-                                <input type="text" class="txt-input w-100 mt-4 py-3" id="Subject" placeholder="Subject">
+                                <!--form items-->
+                                <input type="text" class="txt-input w-100 form-item mt-4 py-3" id="FullName" placeholder="Your Full Name">
+                                <div class="alert alert-danger form-alert mt-2 hidden" role="alert">
+                                    Full Name is empty!!
+                                </div>
+                                <input type="text" class="txt-input w-100 form-item mt-4 py-3" id="Email" placeholder="Your Email">
+                                <div class="alert alert-danger form-alert mt-2 hidden" role="alert">
+                                    Email is empty!!
+                                </div>
+                                <input type="text" class="txt-input w-100 form-item mt-4 py-3" id="Subject" placeholder="Subject">
+                                <div class="alert alert-danger form-alert mt-2 hidden" role="alert">
+                                    Subject is empty!!
+                                </div>
                                 <div class="form-group mt-4 py-3">
-                                    <textarea class="w-100 txt-input form-control p-0" id="" rows="3" placeholder="Your Message"></textarea>
+                                    <textarea class="w-100 txt-input form-item form-control p-0" id="" rows="3" placeholder="Your Message"></textarea>
+                                </div>
+                                <div class="alert alert-danger form-alert mt-2 hidden" role="alert">
+                                    Message is empty!!
                                 </div>
                                 <div class="form-group mt-4">
                                     <div class="form-check">
@@ -355,10 +388,14 @@
                                     This form gathers your personal information and contact information so that we can provide the services you requested
                                 from us. Read our Privacy Policy to understand how we protect and manage the data you submit.
                                 </p>
-                            <button type="submit" class="btn-success w-100 form-button">Submit Your Message<i class="fas fa-arrow-right text-dark bg-light circle-icon ml-2 mr-1"></i></button>
+                            <button type="submit" onclick="submitFunction()" class="btn-success w-100 form-button">Submit Your Message<i class="fas fa-arrow-right text-dark bg-light circle-icon ml-2 mr-1"></i></button>
+                            <div class="alert alert-success mt-2 hidden" id="subsuccess" role="alert">
+                                The submission was successfull!
+                            </div>
                             </form>
                         </div>
-                        <div class="contact-details-container col">
+                        <!-- contact details-->
+                        <div class="contact-details-container col" id="Contact">
                             <div class="mt-5 ml-5 mr-4">
                                 <h2 class="send-message-title w-100">CONTACT DETAILS</h2>
                                 <p class="contact-details-title pt-5">Where to Find Us</p>
@@ -369,9 +406,9 @@
                                 <p class="contact-details-paragraph pt-4 pb-5">Phone: (+357) 22 222 222<br>Fax: (+357) 22 333 333</p>
                             </div>
                             <div class="social-icons-container ml-5 mt-5">
-                                <button onclick class="social-icon-button mr-3"><i class="fab fa-facebook-f social-icon"></i></button>
-                                <button onclick class="social-icon-button mr-3"><i class="fab fa-instagram social-icon"></i></button>
-                                <button onclick class="social-icon-button mr-3"><i class="fab fa-linkedin-in social-icon"></i></button>
+                                <span onclick="window.open('https://www.facebook.com');" class="social-icon-button mr-3 px-3 py-2"><i class="fab fa-facebook-f social-icon"></i></span>
+                                <span onclick="window.open('https://www.instagram.com');" class="social-icon-button mr-3 px-3 py-2"><i class="fab fa-instagram social-icon"></i></span>
+                                <span onclick="window.open('https://www.linkedin.com');" class="social-icon-button mr-3 px-3 py-2"><i class="fab fa-linkedin-in social-icon"></i></span>
                             </div>
                         </div>
 
@@ -383,13 +420,64 @@
 
     </div>
     
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
+    <script>
+        ScrollReveal().reveal('div.who', { delay: 300 });
+        ScrollReveal().reveal('div.titles', { delay: 300 });
+        ScrollReveal().reveal('div.services', { delay: 300 });
+        ScrollReveal().reveal('div#Portfolio', { delay: 300 });
+        ScrollReveal().reveal('div.clients-container', { delay: 300 });
+        ScrollReveal().reveal('div.message-container', { delay: 300 });
+    </script>
+    <script>
+        //Get the button:
+        scrollbutton = document.getElementById("scrlBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollbutton.style.display = "inline-flex";
+            } else {
+                scrollbutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+        function submitFunction(){
+            var formcheckbox = document.getElementById('agreementcheck');
+            console.log(formcheckbox.checked);
+            if (formcheckbox.checked){
+                var formitems=document.getElementsByClassName('form-item');
+                var formalert= document.getElementsByClassName('form-alert');
+                var success=true;
+                for (let i=0;i<formitems.length;i++){
+                    if (formitems[i].value==""){
+                        formalert[i].classList.remove('hidden');
+                        success = false;
+                    }else{
+                        formalert[i].classList.add('hidden');
+                    }
+                }
+                console.log(success);
+                if (success){
+                    document.getElementById('subsuccess').classList.remove('hidden');
+                    setTimeout(() => { document.getElementById('subsuccess').classList.add('hidden'); }, 2000);
+                }
+            }
+        }
+        
+    </script>
 </body>
 
 </html>
